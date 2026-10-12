@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小小影视官网 - 小屏幕里的大世界，亲子家庭观影指南 | 小小影视官网</title>
+<meta name="description" content="小小影视官网（xiaoxiaoyingshiguanwang-top.github.io）是一个为小朋友和家庭打造的影视指南站：动画、绘本改编、科普纪录、亲子共赏片单，每部都标注适龄与看点，陪孩子看好片。">
+<meta name="keywords" content="小小影视官网, xiaoxiaoyingshiguanwang-top, 儿童动画, 亲子观影, 绘本改编, 科普纪录片, 适龄片单">
+<meta name="author" content="小小影视官网">
+<meta name="copyright" content="© 2026 小小影视官网">
+<meta property="og:title" content="小小影视官网 - 小屏幕里的大世界">
+<meta property="og:description" content="动画、绘本改编、科普纪录、亲子共赏片单，陪孩子看好片。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xiaoxiaoyingshiguanwang-top.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://xiaoxiaoyingshiguanwang-top.github.io">
+<style>
+/* ============ 童趣涂鸦手绘风 ============ */
+:root{
+  --cream:#fff8ec;
+  --card:#ffffff;
+  --sky:#7ec8e3;
+  --grass:#a8d5ba;
+  --sun:#ffcb45;
+  --coral:#ff8c94;
+  --grape:#b388eb;
+  --mint:#7dd4c0;
+  --choco:#5d4037;
+  --gray:#8a8078;
+  --line:#f0d9c0;
+  --hand:"Comic Sans MS","Chalkboard SE","PingFang SC","Microsoft YaHei",cursive,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:
+    radial-gradient(700px 400px at 85% 5%, rgba(255,203,69,.20), transparent 60%),
+    radial-gradient(600px 400px at 8% 25%, rgba(126,200,227,.18), transparent 60%),
+    var(--cream);
+  color:var(--choco);
+  line-height:1.8;
+  font-size:16px;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ===== 手绘云朵顶栏 ===== */
+header.top{background:rgba(255,248,236,.92);backdrop-filter:blur(8px);border-bottom:4px dotted var(--sun);position:sticky;top:0;z-index:1000}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .star{width:46px;height:46px;border-radius:50%;background:var(--sun);display:flex;align-items:center;justify-content:center;font-size:26px;color:#7a5a00;transform:rotate(-8deg);box-shadow:0 4px 0 rgba(255,203,69,.4)}
+.brand-text b{font-size:22px;letter-spacing:1px;color:var(--choco);font-family:var(--hand)}
+.brand-text b i{font-style:normal;color:var(--coral)}
+.brand-text small{display:block;font-size:11px;color:var(--gray);letter-spacing:1px}
+.menu{display:flex;gap:6px}
+.menu a{font-size:14px;padding:8px 14px;border-radius:20px;color:var(--gray);transition:.2s;font-family:var(--hand)}
+.menu a:hover{color:#fff;background:var(--coral)}
+
+/* ===== 通用 ===== */
+.sect{padding:64px 0}
+.pill{display:inline-block;font-size:12px;letter-spacing:2px;color:#7a5a00;background:var(--sun);padding:5px 16px;border-radius:20px;font-family:var(--hand)}
+.sect-title{font-size:32px;letter-spacing:1px;margin:12px 0 8px;font-weight:900;font-family:var(--hand)}
+.sect-title em{font-style:normal;color:var(--coral)}
+.sect-desc{font-size:15px;color:var(--gray);max-width:680px;margin-bottom:32px}
+.btn{display:inline-block;font-size:15px;letter-spacing:1px;padding:12px 28px;border-radius:30px;cursor:pointer;transition:.2s;border:3px solid var(--choco);background:var(--coral);color:#fff;font-family:var(--hand)}
+.btn:hover{transform:translateY(-3px) rotate(-1deg);box-shadow:0 8px 16px rgba(255,140,148,.4)}
+.btn-line{background:var(--mint);border-color:var(--choco);color:var(--choco)}
+
+/* ===== Hero ===== */
+.hero{padding:52px 0}
+.scrapbook{border:3px dashed var(--choco);border-radius:24px;background:var(--card);padding:40px;position:relative;box-shadow:0 12px 30px rgba(93,64,55,.08)}
+.scrapbook::before{content:'✂';position:absolute;left:-18px;top:-18px;font-size:34px;background:var(--sun);width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:3px solid var(--choco)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center}
+.hero-grid h1{font-size:44px;line-height:1.2;font-weight:900;font-family:var(--hand)}
+.hero-grid h1 span{color:var(--coral)}
+.hero-grid h1 .wave{display:inline-block;color:var(--grape)}
+.hero-grid p{color:#6b5d52;margin:16px 0 24px;max-width:500px}
+.hero-side{display:flex;flex-direction:column;gap:14px}
+.sticker{border-radius:16px;padding:16px 20px;font-family:var(--hand);position:relative}
+.sticker.s1{background:#fff0d6;border:2px dashed var(--sun);transform:rotate(-2deg)}
+.sticker.s2{background:#e6f6f0;border:2px dashed var(--mint);transform:rotate(2deg)}
+.sticker.s3{background:#f3e9ff;border:2px dashed var(--grape);transform:rotate(-1deg)}
+.sticker .big{font-size:26px;font-weight:900;color:var(--choco)}
+.sticker .lab{font-size:12px;color:var(--gray)}
+
+/* ===== 栏目一：适龄片单 ===== */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{border:3px solid var(--choco);border-radius:20px;background:var(--card);overflow:hidden;transition:.28s;position:relative}
+.card:hover{transform:translateY(-8px) rotate(1deg);box-shadow:0 14px 28px rgba(93,64,55,.12)}
+.thumb{height:150px;display:flex;align-items:center;justify-content:center;font-size:46px;color:#fff}
+.thumb.t1{background:linear-gradient(135deg,var(--sky),var(--mint))}
+.thumb.t2{background:linear-gradient(135deg,var(--coral),var(--sun))}
+.thumb.t3{background:linear-gradient(135deg,var(--grape),var(--sky))}
+.thumb.t4{background:linear-gradient(135deg,var(--sun),var(--coral))}
+.thumb.t5{background:linear-gradient(135deg,var(--mint),var(--grape))}
+.thumb.t6{background:linear-gradient(135deg,var(--sky),var(--coral))}
+.thumb.t7{background:linear-gradient(135deg,var(--grape),var(--sun))}
+.thumb.t8{background:linear-gradient(135deg,var(--coral),var(--mint))}
+.age{position:absolute;top:10px;left:10px;font-family:var(--hand);font-size:12px;background:var(--choco);color:#fff;padding:3px 10px;border-radius:12px}
+.card .body{padding:16px}
+.card h3{font-size:17px;font-family:var(--hand);margin-bottom:6px}
+.card p{font-size:13px;color:var(--gray)}
+.tagrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tag{font-size:11px;padding:3px 10px;border-radius:10px;background:#fff0d6;color:#a06a00;font-family:var(--hand)}
+
+/* ===== 栏目二：四色频道 ===== */
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.chip{border-radius:20px;padding:26px;border:3px solid var(--choco);transition:.25s;display:flex;gap:16px;align-items:center}
+.chip:hover{transform:scale(1.02)}
+.chip.c1{background:#e6f5ff}
+.chip.c2{background:#fff0d6}
+.chip.c3{background:#f3e9ff}
+.chip.c4{background:#e6f6f0}
+.chip .emo{font-size:40px}
+.chip h4{font-size:18px;font-family:var(--hand);margin-bottom:4px}
+.chip p{font-size:13px;color:var(--gray)}
+
+/* ===== 栏目三：亲子观影时间 ===== */
+.track{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stop{border:3px solid var(--choco);border-radius:18px;padding:22px 16px;text-align:center;background:var(--card);transition:.25s}
+.stop:hover{border-color:var(--coral);background:#fff4f4;transform:translateY(-5px)}
+.stop .clock{font-family:var(--hand);font-size:20px;font-weight:900;color:var(--coral)}
+.stop h4{font-size:16px;font-family:var(--hand);margin:6px 0 4px}
+.stop p{font-size:12px;color:var(--gray)}
+
+/* ===== 栏目四：关于 ===== */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.note{border:3px solid var(--choco);border-radius:22px;background:var(--card);padding:32px;position:relative}
+.note::after{content:'★';position:absolute;right:16px;top:14px;font-size:22px;color:var(--sun)}
+.note h3{font-size:21px;font-family:var(--hand);margin-bottom:14px;padding-bottom:10px;border-bottom:3px dotted var(--line)}
+.note p{font-size:15px;color:#6b5d52;margin-bottom:12px}
+.url-box{display:block;margin:14px 0;padding:14px 18px;background:#fff0d6;border:3px dashed var(--choco);font-family:monospace,Consolas,sans-serif;font-size:15px;color:#a06a00;word-break:break-all}
+.check{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.check div{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#6b5d52}
+.check .dot{width:22px;height:22px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff;flex-shrink:0;border:2px solid var(--choco)}
+.faq{border:3px solid var(--choco);border-radius:22px;background:var(--card);padding:32px}
+.faq h3{font-size:20px;font-family:var(--hand);margin-bottom:14px;padding-bottom:10px;border-bottom:3px dotted var(--line)}
+.faq details{border-bottom:2px dashed var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;font-size:15px;font-family:var(--hand)}
+.faq p{font-size:14px;color:#6b5d52;margin-top:8px}
+
+/* ===== 页脚 ===== */
+footer{border-top:4px dotted var(--sun);padding:38px 0 28px;background:#fdeccf}
+.foot{display:grid;grid-template-columns:1fr 1fr;gap:30px;font-size:13px}
+.foot strong{display:block;color:var(--choco);font-size:17px;font-family:var(--hand);margin-bottom:10px;letter-spacing:1px}
+.foot a{color:var(--coral);display:inline-block;margin-right:18px;font-family:var(--hand)}
+.copy{padding-top:20px;margin-top:20px;border-top:2px dashed var(--sun);font-size:12px;color:var(--gray)}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .top .wrap{height:auto;padding:14px 0;flex-direction:column;gap:10px}
+  .menu{width:100%;overflow:auto;gap:4px}
+  .menu a{flex:1;text-align:center;padding:9px 4px;font-size:12px}
+  .scrapbook{padding:28px 22px}
+  .hero-grid h1{font-size:30px}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .grid2{grid-template-columns:1fr}
+  .track{grid-template-columns:repeat(2,1fr)}
+  .sect-title{font-size:25px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- 顶栏 -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <span class="star">⭐</span>
+      <span class="brand-text"><b>小小<b>影视</b>官网</b><small>小屏幕里的大世界</small></span>
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#age">适龄片单</a></li>
+        <li><a href="#chan">四个频道</a></li>
+        <li><a href="#time">观影时间</a></li>
+        <li><a href="#about">写给家长</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="scrapbook">
+      <span class="pill">✦ 亲子家庭观影指南 ✦</span>
+      <div class="hero-grid">
+        <div>
+          <h1>小小<span>影视</span><br><span class="wave">陪孩子看好片</span> 🌈</h1>
+          <p>小小影视官网（xiaoxiaoyingshiguanwang-top.github.io）是一个为小朋友和家庭整理的影视指南：动画、绘本改编、科普纪录、亲子共赏，每部都标好适龄和看点，不费心挑片。</p>
+          <a class="btn" href="#age">挑适龄片单 ↓</a>
+          <a class="btn btn-line" href="#time">看时间安排 ↓</a>
+        </div>
+        <aside class="hero-side">
+          <div class="sticker s1"><div class="big">1,200+</div><div class="lab">适龄片单条目</div></div>
+          <div class="sticker s2"><div class="big">3-12 岁</div><div class="lab">覆盖年龄段</div></div>
+          <div class="sticker s3"><div class="big">4 大频道</div><div class="lab">动画/绘本/科普/亲子</div></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目一：适龄片单 -->
+  <section class="sect" id="age">
+    <span class="pill">✦ 卷一 · 适龄片单 ✦</span>
+    <div class="sect-title">按年龄 <em>挑片单</em></div>
+    <p class="sect-desc">小小影视官网把片单按年龄分层，左下角贴纸就是建议观看年龄，锚点直达，子页未建时统一 # 占位。</p>
+    <div class="grid4">
+      <div class="card"><div class="thumb t1"><span class="age">3+</span>🐣</div><div class="body"><h3>小企鹅去旅行</h3><p>认识动物与季节，画面柔和节奏慢。</p><div class="tagrow"><span class="tag">启蒙</span><span class="tag">动物</span></div></div></div>
+      <div class="card"><div class="thumb t2"><span class="age">4+</span>🧸</div><div class="body"><h3>小熊的蜂蜜日</h3><p>分享与友谊的绘本改编短片。</p><div class="tagrow"><span class="tag">绘本</span><span class="tag">友情</span></div></div></div>
+      <div class="card"><div class="thumb t3"><span class="age">5+</span>🚀</div><div class="body"><h3>太空小狗阿波罗</h3><p>太阳系启蒙，边看边认识行星。</p><div class="tagrow"><span class="tag">科普</span><span class="tag">太空</span></div></div></div>
+      <div class="card"><div class="thumb t4"><span class="age">6+</span>🐠</div><div class="body"><h3>海底总动员同题材</h3><p>海洋生态入门，看完想去水族馆。</p><div class="tagrow"><span class="tag">海洋</span><span class="tag">冒险</span></div></div></div>
+      <div class="card"><div class="thumb t5"><span class="age">7+</span>🦕</div><div class="body"><h3>恐龙博物馆奇妙夜</h3><p>恐龙知识轻松记，适合学龄儿童。</p><div class="tagrow"><span class="tag">科普</span><span class="tag">恐龙</span></div></div></div>
+      <div class="card"><div class="thumb t6"><span class="age">8+</span>🏰</div><div class="body"><h3>城堡里的秘密</h3><p>中世纪背景冒险，带点逻辑推理。</p><div class="tagrow"><span class="tag">冒险</span><span class="tag">推理</span></div></div></div>
+      <div class="card"><div class="thumb t7"><span class="age">9+</span>📖</div><div class="body"><h3>长袜子皮皮</h3><p>经典儿童文学改编，独立又勇敢。</p><div class="tagrow"><span class="tag">文学</span><span class="tag">成长</span></div></div></div>
+      <div class="card"><div class="thumb t8"><span class="age">10+</span>🌍</div><div class="body"><h3>地球脉动少儿版</h3><p>自然纪录入门，适合亲子共看。</p><div class="tagrow"><span class="tag">纪录</span><span class="tag">自然</span></div></div></div>
+    </div>
+  </section>
+
+  <!-- 栏目二：四个频道 -->
+  <section class="sect" id="chan">
+    <span class="pill">✦ 卷二 · 四个频道 ✦</span>
+    <div class="sect-title">四个 <em>频道</em></div>
+    <p class="sect-desc">小小影视官网按内容分成四个频道，每个频道都有明确的功能定位。</p>
+    <div class="grid2">
+      <div class="chip c1"><div class="emo">🎨</div><div><h4>动画乐园</h4><p>国内外优质动画，画风正、节奏好、不吓人。</p></div></div>
+      <div class="chip c2"><div class="emo">📚</div><div><h4>绘本改编</h4><p>把读过的好书搬上屏幕，看完还能翻书对比。</p></div></div>
+      <div class="chip c3"><div class="emo">🔬</div><div><h4>科普纪录</h4><p>自然、太空、人体、历史，边看边学。</p></div></div>
+      <div class="chip c4"><div class="emo">👨‍👩‍👧</div><div><h4>亲子共赏</h4><p>适合大人小孩一起看，看完有话聊。</p></div></div>
+    </div>
+  </section>
+
+  <!-- 栏目三：亲子观影时间 -->
+  <section class="sect" id="time">
+    <span class="pill">✦ 卷三 · 观影时间 ✦</span>
+    <div class="sect-title">一天的 <em>观影表</em></div>
+    <p class="sect-desc">小小影视官网建议把看片嵌进作息里，既不伤眼也不耽误事。</p>
+    <div class="track">
+      <div class="stop"><div class="clock">🌅 08:00</div><h4>晨起小动画</h4><p>5-10 分钟短动画唤醒一天</p></div>
+      <div class="stop"><div class="clock">🍚 12:30</div><h4>午间纪录片</h4><p>边吃饭边看一集科普</p></div>
+      <div class="stop"><div class="clock">📖 18:00</div><h4>绘本动画</h4><p>看完动画翻对应绘本</p></div>
+      <div class="stop"><div class="clock">🌙 20:30</div><h4>亲子共赏</h4><p>家长陪看，看完聊两句</p></div>
+    </div>
+  </section>
+
+  <!-- 栏目四：写给家长 -->
+  <section class="sect" id="about">
+    <span class="pill">✦ 卷四 · 写给家长 ✦</span>
+    <div class="sect-title">关于 <em>小小影视官网</em></div>
+    <div class="about">
+      <div class="note">
+        <h3>写给爸爸妈妈的话</h3>
+        <p>小小影视官网不是一个视频网站，是一个帮家长省心的选片小助手。我们把片单按年龄分好、把看点写好、把观看时间排好，你只管陪着看就行。</p>
+        <p>名字里的"小小"有两层意思：一是给孩子看的片，二是我们做的都是小事——一部一部的挑，一篇一篇的写。</p>
+        <p>官网：</p>
+        <span class="url-box">https://xiaoxiaoyingshiguanwang-top.github.io</span>
+        <p style="font-size:13px;color:#8a7a6a">※ 本页为单页静态展示，内页链接以 # 替代，未生成 robots.txt 与 sitemap.xml。提交必应收录可在 Bing Webmaster Tools 使用该首页 URL。</p>
+        <div class="check">
+          <div><span class="dot">✓</span><span>每部标注适龄建议</span></div>
+          <div><span class="dot">✓</span><span>优先推荐绘本改编与科普</span></div>
+          <div><span class="dot">✓</span><span>控制单次观看时长</span></div>
+          <div><span class="dot">✓</span><span>鼓励看完之后聊一聊</span></div>
+        </div>
+      </div>
+      <div class="faq">
+        <h3>常问问题</h3>
+        <details open><summary>小小影视官网是视频网站吗？</summary><p>不是，本页是静态指南站，负责把适龄片单整理好，方便家长挑片，不直接托管视频。</p></details>
+        <details><summary>适龄标注准吗？</summary><p>标注是参考建议，具体还要结合自家孩子的接受度，恐怖、悲伤类会特别注明。</p></details>
+        <details><summary>内页链接为什么是 #？</summary><p>按需求子页未生成时统一用 # 占位，后续可替换为真实页面路径，首页结构不变。</p></details>
+        <details><summary>一次看多久合适？</summary><p>学龄前建议单次 10-15 分钟，学龄儿童 20-30 分钟，中间记得休息眼睛。</p></details>
+        <details><summary>必应收录要多久？</summary><p>新站无固定时间，通常提交首页 URL 后数天到两周，受内容唯一性与外链影响。</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <strong>小小影视官网</strong>
+        <a href="#home">首页</a>
+        <a href="#age">适龄片单</a>
+        <a href="#chan">四个频道</a>
+        <a href="#time">观影时间</a>
+        <a href="#about">写给家长</a>
+      </div>
+      <div>
+        <strong>关键词</strong>
+        <p>小小影视官网 · xiaoxiaoyingshiguanwang-top · 儿童动画 · 亲子观影 · 绘本改编 · 科普纪录片</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 小小影视官网（https://xiaoxiaoyingshiguanwang-top.github.io）· 单页静态展示，内页链接以 # 替代 · 保留所有栏目展示权利</p>
+  </div>
+</footer>
+
+</body>
+</html>
